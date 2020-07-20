@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everad</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="wrapper">
+      <header class="top-panel">
+        <span class="h2-like">Микоцин</span>
+        <ul class="facts">
+          <li class="facts__item">№1 Для избавления
+            от любого типа грибка</li>
+          <li class="facts__item">Рекомендован
+            дерматологами</li>
+          <li class="facts__item">13000+ довольных
+            клиентов за 2018 год</li>
+        </ul>
+      </header>
+      <div class="hero">
+        <div class="hero__text">
+          <h1>Комплексное
+            избавление
+            от грибка —
+            <span class="small">
+              <span class="underline underline--orange">изнутри</span> и <span
+                class="underline underline--green">снаружи</span>
+            </span>
+          </h1>
+          <ul class="treatment sprite-icons">
+            <li class="treatment__step">Комплекс Микоцин <span class="marked"> устраняет
+                зуд, неприятный запах
+              </span>
+              и возвращает эстетичный вид
+            </li>
+            <li class="treatment__step"><span class="marked underline underline--orange">Таблетки</span> Микоцин
+              <span class="marked">уничтожают все виды грибка</span>
+              на ногтях и коже</li>
+            <li class="treatment__step"><span class="marked underline underline--green">Гель</span> Микоцин
+              <span class="marked">восстанавливает кожу</span>
+              и создает на ней <span class="marked">защитный барьер</span>
+            </li>
+          </ul>
+        </div>
+        <section class="order">
+          <header>
+            Успейте заказать со скидкой <span class="order__expiration">до 10.09.2018</span>
+          </header>
+          <div class="order__prices">
+            <div class="order__price order__price--old">
+              <span>старая цена</span>
+              <span class="price price--old" id="price-old">918₽</span>
+            </div>
+            <div class="order__price order__price--new">
+              <span>новая цена</span>
+              <span class="price price--new" id="price-new">459₽</span>
+            </div>
+          </div>
+          <form action="">
+            <input type="text" class="sprite" name="name" placeholder="Имя">
+            <input type="tel" class="sprite" name="phone" placeholder="Телефон">
+            <button type="submit"><span>Заказать</span> со скидкой</button>
+          </form>
+          <p>Осталось <span id="packs-left">10</span> упаковок со скидкой</p>
+          <footer>Ваши данные защищены!</footer>
+        </section>
+        <div class="mikocine-drugs">
+          <span class="price price--pills" id="price-pills">299₽</span>
+          <span class="price price--gel" id="price-gel">299₽</span>
+          <img src="./images/mikocin-pills.png" alt="Препарат микоцин">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <main>
+      <article>
+        <h2>Грибок – это опасная инфекция</h2>
+        <p>которая угрожает вам и вашим близким, ведь с каждым днем грибок приводит к:</p>
+        <section class="deseases">
+          <section class="desease">
+            <div class="desease__upper">
+              <img src="./images/desease-1.jpg" alt="Сложные формы аллегрии при грибке" class="desease__image">
+              <p class="desease__title">Сложным формам аллергии</p>
+            </div>
+            <p class="desease__description">Может появится сильная реакция на на привычную пищу, одежду, средства
+              гигиены
+            </p>
+          </section>
+          <section class="desease">
+            <div class="desease__upper">
+              <img src="images/desease-2.jpg" alt="Потеря ногтя и ампутация пальца при грибке" class="desease__image">
+              <p class="desease__title">Потере ногтя и ампутации пальца</p>
+            </div>
+            <p class="desease__description">После полного разрушения ногтя грибок распространяется на палец, что
+              приводит
+              к его ампутации </p>
+          </section>
+          <section class="desease">
+            <div class="desease__upper">
+              <img src="./images/desease-3.jpg" alt="Тяжелое поражение внутренних органов при грибке"
+                class="desease__image">
+              <p class="desease__title">Тяжелому поражению внутренних органов </p>
+            </div>
+            <p class="desease__description">Может привести к повреждениям мозга, слепоте, отказу печени, почек и сердца
+            </p>
+          </section>
+        </section>
+      </article>
+      <aside>
+        <p><span>Статистика:</span> каждые 60 секунд врачи диагностируют опасные поражения внутренних органов, вызванные
+          грибком, у 1-го пациента
+        </p>
+      </aside>
+    </main>
+  </div>
+</body>
+
+</html>
