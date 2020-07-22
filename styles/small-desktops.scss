@@ -11,7 +11,7 @@
     bottom: 0;
     left: 0;
   }
-  .fungus-info__deseases {
+  .fungus-info__diseases {
     box-sizing: border-box;
     max-width: 95%;
     margin: 0 auto;
@@ -36,7 +36,7 @@
     &__subtitle {
       padding: 0 20px;
     }
-    &__deseases {
+    &__diseases {
       flex-direction: column;
     }
   }

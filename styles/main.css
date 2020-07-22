@@ -476,7 +476,7 @@ aside {
     margin: 130px auto -90px;
     bottom: 0;
     left: 0; }
-  .fungus-info__deseases {
+  .fungus-info__diseases {
     box-sizing: border-box;
     max-width: 95%;
     margin: 0 auto;
@@ -494,7 +494,7 @@ aside {
     background-position: 57% -2px; }
   .fungus-info__subtitle {
     padding: 0 20px; }
-  .fungus-info__deseases {
+  .fungus-info__diseases {
     flex-direction: column; }
   .disease {
     max-width: 100%;
