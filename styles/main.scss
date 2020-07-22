@@ -6,7 +6,7 @@ $greyColor: #666666;
 $yellowGradient: 0deg, rgb(255, 188, 2) 0%, rgb(255, 206, 2) 100%;
 $orderShadowColor: rgb(223, 238, 255);
 $inputBackgroundColor: #eef2f7;
-$deseasesLabelColors: #ec9a6a, #e47643, #ec5b19;
+$diseasesLabelColors: #ec9a6a, #e47643, #ec5b19;
 
 .sprite {
   background-image: url('../images/icons-sprite.png');
@@ -198,6 +198,28 @@ h1 {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+  &::before {
+    position: absolute;
+    @extend .sprite;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    // left: 45px;
+    // margin: 0 auto;
+    // margin-left: auto;
+    // margin-right: auto;
+    content: 'Бесплатно';
+    padding-left: 45px;
+    width: 160px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 10px solid $greenColor;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: 0;
+    background-color: #ebf3fb;
+    background-position: 9px -792px;
+  }
   &::after {
     position: absolute;
     top: 30%;
@@ -242,23 +264,6 @@ h1 {
   &__expiration {
     color: $orangeColor;
     font-weight: 500;
-  }
-  &::before {
-    position: absolute;
-    @extend .sprite;
-    top: -10px;
-    left: 45px;
-    content: 'Бесплатно';
-    padding-left: 45px;
-    width: 160px;
-    height: 35px;
-    box-sizing: border-box;
-    border: 10px solid $greenColor;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top: 0;
-    background-color: #ebf3fb;
-    background-position: 9px -792px;
   }
   &__prices {
     @extend .flex-row;
@@ -432,14 +437,14 @@ main {
     font-weight: bold;
     margin: 30px 0;
   }
-  &__deseases {
+  &__diseases {
     @extend .flex-row;
     align-items: flex-start;
     justify-content: space-between;
   }
 }
 
-.desease {
+.disease {
   // @extend .flex-column;
   // max-width: 360px;
   display: grid;
@@ -465,7 +470,7 @@ main {
       max-width: 50px;
       max-height: 50px;
       border-radius: 50%;
-      background-color: nth($deseasesLabelColors, $i);
+      background-color: nth($diseasesLabelColors, $i);
       z-index: 100;
     }
   }
@@ -527,7 +532,8 @@ aside {
     width: 170px;
     height: 38px;
     top: -20px;
-    left: 41%;
+    left: 50%;
+    transform: translate(-50%, 0);
     background-position: 50px -433px;
     background-color: white;
   }
@@ -535,3 +541,4 @@ aside {
 
 @import './small-desktops.scss';
 @import './tablets.scss';
+@import './phones.scss';

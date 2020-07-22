@@ -28,16 +28,16 @@
     padding: 0 20px; }
   .fungus-info__deseases {
     flex-direction: column; }
-  .desease {
+  .disease {
     max-width: 100%;
     width: 100%;
     margin: 10px 0;
     grid-template-areas: 'image title title' 'image desc desc'; }
-    .desease__title {
+    .disease__title {
       font-size: 32px;
       margin-left: 0; }
-    .desease__description {
+    .disease__description {
       margin-top: 0;
       max-width: 100%; }
-    .desease__image {
+    .disease__image {
       margin-right: 50px; } }
