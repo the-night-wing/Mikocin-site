@@ -545,6 +545,10 @@ aside {
     max-width: 100%; } }
 
 @media only screen and (max-width: 700px) {
+  .container {
+    background-image: url("../images/hero-bg-small.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
   .treatment,
   h1 {
     max-width: 95%;
