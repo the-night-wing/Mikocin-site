@@ -28,6 +28,7 @@ $diseasesLabelColors: #ec9a6a, #e47643, #ec5b19;
 
 body {
   font-family: 'Roboto', sans-serif;
+  min-width: 360px;
 }
 
 .wrapper {
@@ -138,7 +139,7 @@ h1 {
   margin-top: 45px;
   box-sizing: border-box;
   padding-left: 75px;
-  background-position: 0 -490px;
+  background-position: 0 -486px;
   &__step {
     font-size: 20px;
     color: rgb(68, 68, 68);
@@ -198,28 +199,6 @@ h1 {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
-  &::before {
-    position: absolute;
-    @extend .sprite;
-    top: -10px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    // left: 45px;
-    // margin: 0 auto;
-    // margin-left: auto;
-    // margin-right: auto;
-    content: 'Бесплатно';
-    padding-left: 45px;
-    width: 160px;
-    height: 35px;
-    box-sizing: border-box;
-    border: 10px solid $greenColor;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top: 0;
-    background-color: #ebf3fb;
-    background-position: 9px -792px;
-  }
   &::after {
     position: absolute;
     top: 30%;
@@ -264,6 +243,24 @@ h1 {
   &__expiration {
     color: $orangeColor;
     font-weight: 500;
+  }
+  &::before {
+    position: absolute;
+    @extend .sprite;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    content: 'Бесплатно';
+    padding-left: 45px;
+    width: 160px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 10px solid $greenColor;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: 0;
+    background-color: #ebf3fb;
+    background-position: 9px -792px;
   }
   &__prices {
     @extend .flex-row;
@@ -388,13 +385,13 @@ h1 {
       -o-transform: rotate(166deg);
     }
   }
-  &--pills {
+  &--gel {
     color: white;
     background-color: $greenColor;
     right: 160px;
     top: 120px;
   }
-  &--gel {
+  &--pills {
     color: white;
     background-color: $orangeColor;
     right: 265px;
@@ -445,8 +442,6 @@ main {
 }
 
 .disease {
-  // @extend .flex-column;
-  // max-width: 360px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -455,8 +450,9 @@ main {
   grid-template-areas: 'image title title' 'desc desc desc';
   max-width: 30%;
   flex-wrap: wrap;
+  position: relative;
   @for $i from 1 through 3 {
-    &:nth-child(#{$i}) &__upper::before {
+    &:nth-child(#{$i})::before {
       @extend .flex-row;
       justify-content: center;
       position: absolute;
@@ -465,8 +461,8 @@ main {
       color: white;
       top: 15px;
       left: 140px;
-      width: 4.6vw;
-      height: 4.6vw;
+      width: 50px;
+      height: 50px;
       max-width: 50px;
       max-height: 50px;
       border-radius: 50%;
@@ -521,6 +517,7 @@ aside {
   text-align: center;
   padding: 45px 70px;
   border-radius: 5px;
+  line-height: 1.5;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
