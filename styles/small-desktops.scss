@@ -1,0 +1,59 @@
+@media only screen and (max-width: 1200px) {
+  .order {
+    margin-left: 45px;
+  }
+  .facts {
+    margin-left: 3%;
+  }
+  .mikocine-drugs {
+    position: relative;
+    margin: 130px auto -90px;
+    bottom: 0;
+    left: 0;
+  }
+  .fungus-info__deseases {
+    box-sizing: border-box;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 25px;
+  }
+  aside {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .logo {
+    padding-left: 85px;
+  }
+  .container {
+    background-position: 57% -2px;
+  }
+  .fungus-info {
+    &__subtitle {
+      padding: 0 20px;
+    }
+    &__deseases {
+      flex-direction: column;
+    }
+  }
+  .desease {
+    max-width: 100%;
+    width: 100%;
+    margin: 10px 0;
+    grid-template-areas: 'image title title' 'image desc desc';
+    &__title {
+      font-size: 32px;
+      margin-left: 0;
+    }
+    &__description {
+      margin-top: 0;
+      max-width: 100%;
+    }
+    &__image {
+      margin-right: 50px;
+    }
+  }
+}

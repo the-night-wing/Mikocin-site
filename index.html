@@ -17,7 +17,7 @@
   <div class="container">
     <div class="wrapper">
       <header class="top-panel">
-        <span class="h2-like sprite">Микоцин</span>
+        <span class="logo sprite">Микоцин</span>
         <ul class="facts">
           <li class="facts__item sprite">№1 Для избавления
             от любого типа грибка</li>
@@ -28,61 +28,61 @@
         </ul>
       </header>
       <div class="hero">
-        <div class="hero__text">
-          <h1>Комплексное
-            избавление
-            от грибка —
-            <span class="small">
-              <span class="underline underline--orange">изнутри</span> и <span
-                class="underline underline--green">снаружи</span>
-            </span>
-          </h1>
-          <ul class="treatment sprite">
-            <li class="treatment__step">Комплекс Микоцин <span class="marked"> устраняет
-                зуд, неприятный запах
+        <div class="hero__wrapper">
+          <div class="hero__text">
+            <h1>Комплексное
+              избавление
+              от грибка —
+              <span class="small">
+                <span class="underline underline--orange">изнутри</span> и <span
+                  class="underline underline--green">снаружи</span>
               </span>
-              и возвращает эстетичный вид
-            </li>
-            <li class="treatment__step"><span class="marked underline underline--orange">Таблетки</span> Микоцин
-              <span class="marked">уничтожают все виды грибка</span>
-              на ногтях и коже</li>
-            <li class="treatment__step"><span class="marked underline underline--green">Гель</span> Микоцин
-              <span class="marked">восстанавливает кожу</span>
-              и создает на ней <span class="marked">защитный барьер</span>
-            </li>
-          </ul>
-        </div>
-        <section class="order">
-          <div class="order__main">
-            <header>
-              Успейте заказать со скидкой <span class="order__expiration">до 10.09.2018</span>
-            </header>
-            <div class="order__prices">
-              <div class="order__price">
-                <span class="order__price-name order__price-name--old">старая цена</span>
-                <span class="price price--old" id="price-old">918₽</span>
-              </div>
-              <div class="order__price">
-                <span class="order__price-name order__price-name--new">новая цена</span>
-                <span class="price price--new" id="price-new">459₽</span>
-              </div>
-            </div>
-            <form action="">
-              <input type="text" class="sprite" name="name" placeholder="Имя">
-              <input type="tel" class="sprite" name="phone" placeholder="Телефон">
-              <button type="submit" id="order-submit" class="order__submit"><span class="big">Заказать</span> со
-                скидкой</button>
-            </form>
-            <p class="order__packs-left">Осталось <span id="packs-left">10</span> упаковок со скидкой</p>
+            </h1>
+            <ul class="treatment sprite">
+              <li class="treatment__step">Комплекс Микоцин <span class="marked"> устраняет
+                  зуд, неприятный запах
+                </span>
+                и возвращает эстетичный вид
+              </li>
+              <li class="treatment__step"><span class="marked underline underline--orange">Таблетки</span> Микоцин
+                <span class="marked">уничтожают все виды грибка</span>
+                на ногтях и коже</li>
+              <li class="treatment__step"><span class="marked underline underline--green">Гель</span> Микоцин
+                <span class="marked">восстанавливает кожу</span>
+                и создает на ней <span class="marked">защитный барьер</span>
+              </li>
+            </ul>
           </div>
-          <p class="order__data-protected sprite">Ваши данные защищены!</p>
-        </section>
+          <section class="order">
+            <div class="order__main">
+              <header>
+                Успейте заказать со скидкой <span class="order__expiration">до 10.09.2018</span>
+              </header>
+              <div class="order__prices">
+                <div class="order__price">
+                  <span class="order__price-name order__price-name--old">старая цена</span>
+                  <span class="price price--old" id="price-old">918₽</span>
+                </div>
+                <div class="order__price">
+                  <span class="order__price-name order__price-name--new">новая цена</span>
+                  <span class="price price--new" id="price-new">459₽</span>
+                </div>
+              </div>
+              <form action="">
+                <input type="text" class="sprite" name="name" placeholder="Имя">
+                <input type="tel" class="sprite" name="phone" placeholder="Телефон">
+                <button type="submit" id="order-submit" class="order__submit"><span class="big">Заказать</span> со
+                  скидкой</button>
+              </form>
+              <p class="order__packs-left">Осталось <span id="packs-left">10</span> упаковок со скидкой</p>
+            </div>
+            <p class="order__data-protected sprite">Ваши данные защищены!</p>
+          </section>
+        </div>
         <div class="mikocine-drugs">
-          <!-- <figure> -->
           <span class="price price--pills" id="price-pills">299₽</span>
           <span class="price price--gel" id="price-gel">299₽</span>
           <img src="./images/mikocin-pills.png" alt="Препарат микоцин">
-          <!-- </figure> -->
         </div>
       </div>
     </div>
@@ -95,29 +95,23 @@
         </p>
         <section class="fungus-info__deseases">
           <section class="desease">
-            <div class="desease__upper">
-              <img src="./images/desease-1.jpg" alt="Сложные формы аллегрии при грибке" class="desease__image">
-              <p class="desease__title">Сложным формам аллергии</p>
-            </div>
+            <img src="./images/desease-1.jpg" alt="Сложные формы аллегрии при грибке" class="desease__image">
+            <p class="desease__title">Сложным формам аллергии</p>
             <p class="desease__description">Может появится сильная реакция на привычную пищу, одежду, средства
               гигиены
             </p>
           </section>
           <section class="desease">
-            <div class="desease__upper">
-              <img src="images/desease-2.jpg" alt="Потеря ногтя и ампутация пальца при грибке" class="desease__image">
-              <p class="desease__title">Потере ногтя и ампутации пальца</p>
-            </div>
+            <img src="images/desease-2.jpg" alt="Потеря ногтя и ампутация пальца при грибке" class="desease__image">
+            <p class="desease__title">Потере ногтя и ампутации пальца</p>
             <p class="desease__description">После полного разрушения ногтя грибок распространяется на палец, что
               приводит
               к его ампутации </p>
           </section>
           <section class="desease">
-            <div class="desease__upper">
-              <img src="./images/desease-3.jpg" alt="Тяжелое поражение внутренних органов при грибке"
-                class="desease__image">
-              <p class="desease__title">Тяжелому поражению внутренних органов </p>
-            </div>
+            <img src="./images/desease-3.jpg" alt="Тяжелое поражение внутренних органов при грибке"
+              class="desease__image">
+            <p class="desease__title">Тяжелому поражению внутренних органов </p>
             <p class="desease__description">Может привести к повреждениям мозга, слепоте, отказу печени, почек и сердца
             </p>
           </section>

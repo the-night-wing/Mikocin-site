@@ -9,12 +9,13 @@
   width: 55px;
   height: 37px; }
 
-.flex-row, .top-panel .h2-like, .order__prices, .price, .fungus-info__deseases, .desease:nth-child(1) .desease__upper::before, .desease:nth-child(2) .desease__upper::before, .desease:nth-child(3) .desease__upper::before, .desease__upper {
+.flex-row, .logo, .top-panel,
+.facts, .hero__wrapper, .order__prices, .price, .fungus-info__deseases, .desease:nth-child(1) .desease__upper::before, .desease:nth-child(2) .desease__upper::before, .desease:nth-child(3) .desease__upper::before, .desease__title {
   display: flex;
   flex-direction: row;
   align-items: center; }
 
-.flex-column, h1, .order, .order__main, .order header, .order__price, .desease {
+.flex-column, h1, .order, .order__main, .order header, .order__price {
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -28,34 +29,28 @@ body {
 
 .container {
   background-image: url("../images/hero-bg.jpg");
-  background-position: 51% 50%;
+  background-position: 50% -2px;
   background-size: 165%;
-  background-repeat: no-repeat; }
+  background-size: 2700px auto;
+  background-repeat: no-repeat;
+  width: 100%; }
 
-.h2-like {
+.logo {
+  background-position: 0 -827px;
+  padding-left: 100px;
+  height: 56px;
+  font-size: 22px;
+  color: #383334;
   font-size: 24px;
-  font-weight: bold;
-  display: inline-block; }
-
-.top-panel,
-.facts {
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
+  font-weight: bold; }
 
 .top-panel {
-  margin-left: 222px;
-  padding: 10px 0; }
-  .top-panel .h2-like {
-    background-position: 0 -827px;
-    padding-left: 100px;
-    height: 56px;
-    font-size: 22px;
-    color: #383334;
-    line-height: 1.818; }
+  padding: 10px 0;
+  justify-content: flex-end; }
 
 .facts {
-  margin-left: 70px; }
+  margin-left: 70px;
+  max-width: 700px; }
   .facts__item {
     padding-left: 40px;
     height: 40px;
@@ -129,30 +124,37 @@ h1 {
 .hero {
   position: relative;
   margin-top: 30px;
-  height: 680px;
+  min-height: 680px;
   padding-bottom: 30px; }
+  .hero__wrapper {
+    justify-content: flex-end; }
   .hero__text {
-    margin-left: 500px; }
+    max-width: 365px; }
 
 .mikocine-drugs {
   position: absolute;
   bottom: -60px;
-  left: -100px; }
+  left: -100px;
+  left: -10%;
+  left: -5vw;
+  max-width: 700px;
+  width: 100%; }
   .mikocine-drugs span {
     position: absolute; }
 
 .order {
-  position: absolute;
-  right: 0;
+  position: relative;
+  margin-left: 55px;
+  right: 25px;
   top: 0;
   background-color: white;
   align-items: stretch;
   max-width: 270px;
   border: 10px solid #a7c93d;
   border-radius: 15px;
-  -webkit-box-shadow: 0px -7px 100px 25px #dfeeff;
-  -moz-box-shadow: 0px -7px 100px 25px #dfeeff;
-  box-shadow: 0px -7px 100px 25px #dfeeff;
+  -webkit-box-shadow: 0px -7px 100px 15px #dfeeff;
+  -moz-box-shadow: 0px -7px 100px 15px #dfeeff;
+  box-shadow: 0px -7px 100px 15px #dfeeff;
   box-sizing: border-box;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -196,7 +198,7 @@ h1 {
     font-weight: 500; }
   .order::before {
     position: absolute;
-    top: -10.5px;
+    top: -10px;
     left: 45px;
     content: 'Бесплатно';
     padding-left: 45px;
@@ -207,7 +209,7 @@ h1 {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border-top: 0;
-    background-color: #f2f8ff;
+    background-color: #ebf3fb;
     background-position: 9px -792px; }
   .order__prices {
     justify-content: space-between;
@@ -355,10 +357,17 @@ main {
     font-weight: bold;
     margin: 30px 0; }
   .fungus-info__deseases {
+    align-items: flex-start;
     justify-content: space-between; }
 
 .desease {
-  max-width: 30%; }
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: 'image title title' 'desc desc desc';
+  max-width: 30%;
+  flex-wrap: wrap; }
   .desease:nth-child(1) .desease__upper::before {
     justify-content: center;
     position: absolute;
@@ -367,8 +376,10 @@ main {
     color: white;
     top: 15px;
     left: 140px;
-    width: 50px;
-    height: 50px;
+    width: 4.6vw;
+    height: 4.6vw;
+    max-width: 50px;
+    max-height: 50px;
     border-radius: 50%;
     background-color: #ec9a6a;
     z-index: 100; }
@@ -380,8 +391,10 @@ main {
     color: white;
     top: 15px;
     left: 140px;
-    width: 50px;
-    height: 50px;
+    width: 4.6vw;
+    height: 4.6vw;
+    max-width: 50px;
+    max-height: 50px;
     border-radius: 50%;
     background-color: #e47643;
     z-index: 100; }
@@ -393,21 +406,25 @@ main {
     color: white;
     top: 15px;
     left: 140px;
-    width: 50px;
-    height: 50px;
+    width: 4.6vw;
+    height: 4.6vw;
+    max-width: 50px;
+    max-height: 50px;
     border-radius: 50%;
     background-color: #ec5b19;
     z-index: 100; }
-  .desease__upper {
-    margin-bottom: 25px;
-    position: relative; }
+  .desease__image {
+    max-width: 188px;
+    grid-area: image; }
   .desease__title {
     font-size: 22px;
     line-height: 1.182;
     font-weight: 500;
     text-align: left;
-    margin-left: 19px; }
+    margin-left: 19px;
+    grid-area: title; }
   .desease__description {
+    grid-area: desc;
     position: relative;
     font-size: 18px;
     color: #444444;
@@ -415,7 +432,8 @@ main {
     text-align: left;
     max-width: 312px;
     box-sizing: border-box;
-    padding-top: 20px; }
+    padding-top: 20px;
+    margin-top: 25px; }
     .desease__description::before {
       content: '';
       position: absolute;
@@ -449,3 +467,46 @@ aside {
     left: 41%;
     background-position: 50px -433px;
     background-color: white; }
+
+@media only screen and (max-width: 1200px) {
+  .order {
+    margin-left: 45px; }
+  .facts {
+    margin-left: 3%; }
+  .mikocine-drugs {
+    position: relative;
+    margin: 130px auto -90px;
+    bottom: 0;
+    left: 0; }
+  .fungus-info__deseases {
+    box-sizing: border-box;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 25px; }
+  aside {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media only screen and (max-width: 1100px) {
+  .logo {
+    padding-left: 85px; }
+  .container {
+    background-position: 57% -2px; }
+  .fungus-info__subtitle {
+    padding: 0 20px; }
+  .fungus-info__deseases {
+    flex-direction: column; }
+  .desease {
+    max-width: 100%;
+    width: 100%;
+    margin: 10px 0;
+    grid-template-areas: 'image title title' 'image desc desc'; }
+    .desease__title {
+      font-size: 32px;
+      margin-left: 0; }
+    .desease__description {
+      margin-top: 0;
+      max-width: 100%; }
+    .desease__image {
+      margin-right: 50px; } }
