@@ -4,11 +4,6 @@
   background-position: left center;
   background-repeat: no-repeat; }
 
-.sprite.barchart_icon_png, .barchart_icon_png.order::before, main.barchart_icon_png::before, aside.barchart_icon_png::before {
-  background-position: 0 -433px;
-  width: 55px;
-  height: 37px; }
-
 .flex-row, .logo, .top-panel,
 .facts, .hero__wrapper, .order__prices, .price, .fungus-info__deseases, .desease:nth-child(1) .desease__upper::before, .desease:nth-child(2) .desease__upper::before, .desease:nth-child(3) .desease__upper::before, .desease__title {
   display: flex;
@@ -127,7 +122,8 @@ h1 {
   min-height: 680px;
   padding-bottom: 30px; }
   .hero__wrapper {
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    align-items: flex-start; }
   .hero__text {
     max-width: 365px; }
 
@@ -490,7 +486,8 @@ aside {
 
 @media only screen and (max-width: 1100px) {
   .logo {
-    padding-left: 85px; }
+    padding-left: 85px;
+    margin-left: 10px; }
   .container {
     background-position: 57% -2px; }
   .fungus-info__subtitle {
@@ -510,3 +507,15 @@ aside {
       max-width: 100%; }
     .desease__image {
       margin-right: 50px; } }
+
+@media only screen and (max-width: 920px) {
+  .container {
+    background-position: 60% -2px; }
+  .top-panel {
+    flex-direction: column; }
+  .logo {
+    padding-left: 100px;
+    margin-bottom: 25px;
+    margin-left: 0; }
+  .hero {
+    margin-top: 20px; } }

@@ -4,7 +4,7 @@ const del = require('del');
 
 gulp.task('styles', () => {
   return gulp
-    .src('styles/main.scss')
+    .src('styles/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./styles/'));
 });
@@ -14,7 +14,7 @@ gulp.task('clean', () => {
 });
 
 gulp.task('watch', () => {
-  gulp.watch('styles/main.scss', (done) => {
+  gulp.watch('styles/*.scss', (done) => {
     gulp.series(['clean', 'styles'])(done);
   });
 });
