@@ -9,9 +9,23 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "browserslist": [
+    "ie >= 10",
+    "ie_mob >= 10",
+    "ff >= 30",
+    "chrome >= 34",
+    "safari >= 7",
+    "opera >= 23",
+    "ios >= 7",
+    "android >= 4.4",
+    "bb >= 10"
+  ],
   "devDependencies": {
     "del": "^5.1.0",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-sass": "^4.1.0"
   }
 }
